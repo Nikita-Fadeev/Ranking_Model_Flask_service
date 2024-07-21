@@ -153,7 +153,7 @@ class Advice:
 
         suggestion = list(zip(id, text))
       else:
-        suggestion = [[None, None]] * 10 
+        suggestion = [[None, None]] * top_k_knrm 
       suggestions.append(suggestion)
 
     response = {'lang_check': lang_check.tolist(), 'suggestions': suggestions}
